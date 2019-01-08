@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-export default class Recipe extends Component {
+export default class Home extends Component {
   render() {
     return (
       <div>
-        <h2>Hello world</h2>
-      </div>
+        <h1>Hello World</h1>
+      </div>    
     )
   }
 }
