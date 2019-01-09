@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 export default class RecipeThumbnail extends Component {
   render() {
     return (
-        <div Style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
+        <div className="row" style={{'border': 1 + 'px solid #ddd', 'borderRadius': 4 + 'px', 'padding': 5 + 'px'}}>
             <div className="col-md-4">
-                <img src="./resources/crazy-pedros.jpg" alt="pizza time" Style="width:150px; height:150px"/>
+                <img src="/resources/crazy-pedros.jpg" alt="pizza time" style={{'width' :150 + 'px', 'height':150 + 'px'}}/>
             </div>
             <div className='col-md-8'>
                 <h2>Pizza time</h2>

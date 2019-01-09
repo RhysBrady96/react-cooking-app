@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 
 export default class UserNavbar extends Component {

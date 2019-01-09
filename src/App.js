@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/HeaderComponents/Header';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faUserPlus, faPlus, faImage } from '@fortawesome/free-solid-svg-icons'
 import { Route } from 'react-router-dom';
 
 import Home from './Components/Home';
@@ -11,14 +11,16 @@ import AddRecipe from './Components/RecipeComponents/AddRecipe';
 
 
 library.add(faUser);
-library.add(faUserPlus)
+library.add(faUserPlus);
+library.add(faPlus);
+library.add(faImage);
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header/>
-            <div>
+            <div className="container">
               <Route path='/recipes' component={RecipieList}/>
               <Route path='/addrecipe' component={AddRecipe} />
               <Route exact path='/' component={Home}/>
